@@ -1,0 +1,58 @@
+---
+/* ============================================================
+   SITE HEADER
+   Brand wordmark, navigation, and the gl/es/en language switch.
+   Nav labels come from the i18n dictionary, so they translate
+   automatically once you fill in gl/es strings.
+   ============================================================ */
+import { useTranslations, localizePath, languages } from '../i18n/ui.js';
+
+const { lang = 'en', active = '' } = Astro.props;
+const t = useTranslations(lang);
+
+const navItems = [
+  { key: 'projects', label: t('nav.projects') },
+  { key: 'blog',     label: t('nav.blog') },
+  { key: 'about',    label: t('nav.about') },
+];
+
+// For the language switch: keep the user on the same logical page
+// when they swap languages. We derive the "bare" path (without the
+// language prefix) from the current URL.
+const current = Astro.url.pathname;
+function barePath(path) {
+  // strip a leading /es/ or /en/ if present
+  const m = path.match(/^\/(es|en)(\/.*)?$/);
+  if (m) return m[2] || '/';
+  return path;
+}
+const bare = barePath(current);
+function switchTo(code) {
+  const clean = bare.replace(/^\/+|\/+$/g, '');
+  if (code === 'gl') return '/' + (clean ? clean + '/' : '');
+  return '/' + code + '/' + (clean ? clean + '/' : '');
+}
+---
+<header class="site-header">
+  <div class="wrap bar">
+    <a class="brand" href={localizePath('/', lang)}>Coru<span class="tilde">ñ</span>a Labs</a>
+
+    <nav class="nav" aria-label="Primary">
+      {navItems.map((item) => (
+        <a
+          href={localizePath('/' + item.key, lang)}
+          class={active === item.key ? 'active' : ''}
+        >{item.label}</a>
+      ))}
+
+      <span class="lang-switch" aria-label="Language">
+        {languages.map((code, i) => (
+          <>
+            <a href={switchTo(code)} class={lang === code ? 'active' : ''}>{code}</a>
+            {i < languages.length - 1 && <span class="sep">·</span>}
+          </>
+        ))}
+      </span>
+    </nav>
+  </div>
+</header>

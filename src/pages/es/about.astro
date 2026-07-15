@@ -1,0 +1,29 @@
+---
+import Base from '../../layouts/Base.astro';
+import { useTranslations } from '../../i18n/ui.js';
+const lang = 'es';
+const t = useTranslations(lang);
+---
+<Base lang={lang} active="about" title={`${t('about.title')} · Coruña Labs`} description="Un laboratorio cívico independiente para A Coruña.">
+  <section class="section">
+    <div class="wrap">
+      <p class="section-label">{t('about.title')}</p>
+      <div class="article-body prose">
+        <h1 style="font-size:var(--fs-xl); margin-bottom:24px;">Un laboratorio cívico independiente para A Coruña</h1>
+
+        <p>Coruña Labs es un laboratorio pequeño e independiente que construye mapas y herramientas abiertas a partir de datos públicos. Toma la información que la ciudad ya produce (posiciones de los autobuses, datos censales, límites escolares, registros de planeamiento) y la convierte en cosas que cualquier persona en A Coruña puede usar, en el navegador, de forma gratuita.</p>
+
+        <p>El modelo se toma abiertamente de oficinas de tecnología cívica como Planning Labs de Nueva York: construir herramientas bien hechas y de código abierto sobre datos públicos, documentar cómo funcionan y regalarlas. Cada proyecto aquí indica sus fuentes de datos y explica su método. Una herramienta cívica que no se puede comprobar no vale mucho.</p>
+
+        <h2>Cómo funciona</h2>
+        <p>El laboratorio no genera datos. Las instituciones públicas (la Compañía de Tranvías, el Instituto Nacional de Estadística, el Concello da Coruña, la Xunta de Galicia) hacen eso como parte de gestionar una ciudad y una región. El papel del laboratorio es más concreto y más útil: hacer legible ese trabajo. Cada herramienta es de código abierto y vive en su propio repositorio, para que cualquiera pueda leerla, reutilizarla o mejorarla.</p>
+
+        <h2>Idiomas</h2>
+        <p>El laboratorio trabaja en gallego, castellano e inglés, para que sus herramientas sean útiles tanto para los residentes de A Coruña como para un público más amplio interesado en la vida cívica y urbana de la ciudad.</p>
+
+        <h2>Quién</h2>
+        <p>Coruña Labs es un proyecto independiente, no es una empresa ni tiene ánimo de lucro. Con el tiempo, podría optar a subvenciones o colaborar con socios públicos y no gubernamentales, pero su propósito es sencillo: hacer la ciudad más legible para las personas que viven en ella.</p>
+      </div>
+    </div>
+  </section>
+</Base>

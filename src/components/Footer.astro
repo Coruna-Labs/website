@@ -1,0 +1,32 @@
+---
+/* ============================================================
+   SITE FOOTER
+   ============================================================ */
+import { useTranslations, localizePath } from '../i18n/ui.js';
+const { lang = 'en' } = Astro.props;
+const t = useTranslations(lang);
+const year = new Date().getFullYear();
+---
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="fbrand">Coruña Labs</div>
+    <div class="fnote">{t('footer.tagline')} {t('footer.built')}</div>
+
+    <div class="fcols">
+      <div class="fcol">
+        <a href={localizePath('/projects', lang)}>{t('projects.title')}</a>
+      </div>
+      <div class="fcol">
+        <a href={localizePath('/blog', lang)}>{t('blog.title')}</a>
+      </div>
+      <div class="fcol">
+        <a href={localizePath('/about', lang)}>{t('about.title')}</a>
+      </div>
+      <div class="fcol">
+        <a href="https://github.com/Coruna-Labs" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </div>
+
+    <div class="fnote" style="margin-top:28px;">© {year} Coruña Labs · A Coruña, Galicia</div>
+  </div>
+</footer>

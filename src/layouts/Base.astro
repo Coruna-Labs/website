@@ -1,0 +1,35 @@
+---
+/* ============================================================
+   BASE LAYOUT
+   Every page uses this. It loads BaseHead (fonts, favicon, CSS,
+   meta) and wraps content with the site header and footer.
+   Pass `lang`, `title`, and `description`.
+   ============================================================ */
+import '../styles/global.css';
+import { ViewTransitions } from 'astro:transitions';
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+
+const {
+  lang = 'en',
+  title = 'Coruña Labs',
+  description = 'Civic data, maps, and tools for A Coruña.',
+  active = '',
+} = Astro.props;
+---
+<!DOCTYPE html>
+<html lang={lang}>
+<head>
+  <BaseHead title={title} description={description} lang={lang} />
+  <ViewTransitions />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <Header lang={lang} active={active} />
+  <main id="main">
+    <slot />
+  </main>
+  <Footer lang={lang} />
+</body>
+</html>
