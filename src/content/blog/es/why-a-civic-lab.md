@@ -1,24 +1,16 @@
 ---
 title: "Por qué un laboratorio cívico para A Coruña"
-description: "Las ciudades funcionan gracias a datos públicos. La mayoría nunca llega a las personas que describen. Este es un pequeño intento de cerrar esa brecha."
+description: "Las ciudades funcionan gracias a datos públicos, pero gran parte de esa información nunca llega a las personas que describe. Este es un pequeño intento de cerrar esa brecha."
 pubDate: 2026-06-21
 author: "Coruña Labs"
 lang: "es"
 draft: false
 ---
 
-A Coruña ya produce una cantidad notable de datos sobre sí misma. La compañía de autobuses sabe dónde está cada vehículo. El censo registra cómo cambia cada barrio. El Concello mantiene los límites de cada zona escolar, cada distrito, cada decisión de planeamiento. Esta información existe, es en gran parte pública, y es casi invisible para las personas que describe.
+Coruña Labs es un laboratorio pequeño e independiente que construye mapas y herramientas abiertas a partir de datos públicos. Toma la información que la ciudad ya produce (posiciones de los autobuses, datos censales, límites escolares, registros de planeamiento) y la convierte en cosas que cualquier persona en A Coruña puede usar, en el navegador, de forma gratuita.
 
-Coruña Labs es un pequeño intento de cerrar esa brecha. La idea se toma abiertamente de lugares como Planning Labs de Nueva York: tomar datos públicos, construir una herramienta clara y bien hecha sobre ellos, y regalarla. Sin aplicación que descargar, sin cuenta que crear, sin muro de pago. Solo algo que funciona, en el navegador, para cualquier persona de la ciudad.
+El modelo está tomado e inspirado en oficinas de tecnología cívica del Ayuntamiento de Nueva York y de BetaNYC: construir herramientas bien hechas y de código abierto sobre datos públicos, documentar cómo funcionan y regalarlas. Cada proyecto aquí indica sus fuentes de datos y explica su método.
 
-## Construido sobre el propio trabajo de la ciudad
+## Cómo funciona
 
-El laboratorio no genera los datos. La compañía de autobuses, la oficina de estadística y el Concello lo hacen, de forma continua y discreta, como parte de gestionar una ciudad. La idea es más concreta: hacer legible ese trabajo. Cada herramienta publicada aquí indicará sus fuentes y explicará su método, porque una herramienta cívica que no se puede comprobar no vale mucho.
-
-Eso es deliberado. Lo más útil que puede hacer un pequeño laboratorio independiente no es sustituir a las instituciones públicas, sino mostrar su trabajo: tomar los datos que ya publican y convertirlos en algo que un vecino, un periodista o un urbanista pueda usar de verdad.
-
-## Qué viene primero
-
-La primera herramienta es un mapa de autobuses en vivo: cada vehículo de la red, moviéndose en el mapa en tiempo real, igual que el mapa del metro de Nueva York muestra sus trenes. Después, un mapa censal interactivo y un buscador de zonas escolares. Cada uno llegará cuando esté realmente listo, y cada uno será de código abierto.
-
-Este es el comienzo de algo pensado para crecer despacio y bien. Más pronto.
+El laboratorio no genera datos. Las instituciones públicas (la Compañía de Tranvías, el Instituto Nacional de Estadística, el Concello da Coruña, la Xunta de Galicia) hacen eso como parte de gestionar una ciudad y una región. La idea es hacer legible ese trabajo. Cada herramienta es de código abierto y vive en su propio repositorio, para que cualquiera pueda leerla, reutilizarla o mejorarla.
