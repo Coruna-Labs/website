@@ -45,7 +45,7 @@
    RESET / BASE
    ============================================================ */
 *, *::before, *::after { box-sizing: border-box; }
-html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+html { -webkit-text-size-adjust: 100%; }
 body {
   margin: 0;
   background: var(--paper);
@@ -168,10 +168,56 @@ p { margin: 0 0 1em; }
 .lang-switch a.active { color: var(--paper); background: var(--atlantic); }
 .lang-switch .sep { color: var(--line-strong); }
 
+/* language dropdown (mobile only; see media query below) */
+.lang-dropdown { display: none; position: relative; }
+.lang-dropdown summary {
+  list-style: none;
+  cursor: pointer;
+  font-family: var(--font-display);
+  font-size: var(--fs-xs);
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  color: var(--muted);
+  padding: 4px 8px;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+}
+.lang-dropdown summary::-webkit-details-marker { display: none; }
+.lang-dropdown summary::marker { content: ""; }
+.lang-dropdown[open] summary { color: var(--ink); border-color: var(--line-strong); }
+.lang-menu {
+  position: absolute;
+  top: calc(100% + 6px);
+  right: 0;
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 4px;
+  display: flex;
+  flex-direction: column;
+  min-width: 64px;
+  z-index: 30;
+  box-shadow: 0 4px 12px rgba(0,0,0,.08);
+}
+.lang-menu a {
+  font-family: var(--font-display);
+  font-size: var(--fs-xs);
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  color: var(--muted);
+  padding: 6px 10px;
+  border-radius: 4px;
+}
+.lang-menu a:hover { background: var(--paper-2); color: var(--ink); text-decoration: none; }
+.lang-menu a.active { color: var(--paper); background: var(--atlantic); }
+
 /* mobile nav: simple wrap */
 @media (max-width: 640px) {
-  .site-header .bar { height: auto; padding: 14px 0; flex-wrap: wrap; gap: 12px; }
-  .nav { gap: 18px; flex-wrap: wrap; }
+  .site-header .bar { height: auto; padding-top: 14px; padding-bottom: 14px; flex-wrap: wrap; gap: 12px; }
+  .nav { gap: 14px; flex-wrap: wrap; width: 100%; }
+  .nav a { font-size: 13px; }
+  .lang-switch { display: none; }
+  .lang-dropdown { display: block; margin-left: auto; }
 }
 
 /* ============================================================
@@ -339,6 +385,9 @@ p { margin: 0 0 1em; }
   font-size: var(--fs-sm);
   color: var(--ink);
   padding: 3px 0;
+}
+@media (max-width: 640px) {
+  .site-footer .fcols { gap: 16px; }
 }
 
 /* ============================================================

@@ -53,6 +53,15 @@ function switchTo(code) {
           </>
         ))}
       </span>
+
+      <details class="lang-dropdown">
+        <summary aria-label="Language">{lang.toUpperCase()} <span aria-hidden="true">▾</span></summary>
+        <div class="lang-menu">
+          {languages.map((code) => (
+            <a href={switchTo(code)} class={lang === code ? 'active' : ''}>{code.toUpperCase()}</a>
+          ))}
+        </div>
+      </details>
     </nav>
   </div>
 </header>
