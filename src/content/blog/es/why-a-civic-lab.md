@@ -13,9 +13,9 @@ Coruña Labs es un pequeño intento de cerrar esa brecha. La idea se toma abiert
 
 ## Construido sobre el propio trabajo de la ciudad
 
-El laboratorio no genera los datos. La compañía de autobuses, la oficina de estadística y el Concello lo hacen, de forma continua y discreta, como parte de gestionar una ciudad. La labor del laboratorio es más concreta: hacer legible ese trabajo. Cada herramienta publicada aquí indicará sus fuentes y explicará su método, porque una herramienta cívica que no se puede comprobar no vale mucho.
+El laboratorio no genera los datos. La compañía de autobuses, la oficina de estadística y el Concello lo hacen, de forma continua y discreta, como parte de gestionar una ciudad. La idea es más concreta: hacer legible ese trabajo. Cada herramienta publicada aquí indicará sus fuentes y explicará su método, porque una herramienta cívica que no se puede comprobar no vale mucho.
 
-Esa postura es deliberada. Lo más útil que puede hacer un pequeño laboratorio independiente no es sustituir a las instituciones públicas, sino mostrar su trabajo: tomar los datos que ya publican y convertirlos en algo que un vecino, un periodista o un urbanista pueda usar de verdad.
+Eso es deliberado. Lo más útil que puede hacer un pequeño laboratorio independiente no es sustituir a las instituciones públicas, sino mostrar su trabajo: tomar los datos que ya publican y convertirlos en algo que un vecino, un periodista o un urbanista pueda usar de verdad.
 
 ## Qué viene primero
 

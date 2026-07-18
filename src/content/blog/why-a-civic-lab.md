@@ -13,9 +13,9 @@ Coruña Labs is a small attempt to close that gap. The idea is borrowed openly f
 
 ## Built on the city's own work
 
-The lab does not generate the data. The bus company, the statistical office, and the Concello do that, quietly and continuously, as part of running a city. The lab's job is narrower: to make that work legible. Every tool published here will name its sources and explain its method, because a civic tool that cannot be checked is not worth much.
+The lab does not generate the data. The bus company, the statistical office, and the Concello do that, quietly and continuously, as part of running a city. The idea is narrower: to make that work legible. Every tool published here will name its sources and explain its method, because a civic tool that cannot be checked is not worth much.
 
-That posture is deliberate. The most useful thing a small independent lab can do is not to replace public institutions but to show their work: to take the data they already publish and turn it into something a resident, a journalist, or a planner can actually use.
+That's deliberate. The most useful thing a small independent lab can do is not to replace public institutions but to show their work: to take the data they already publish and turn it into something a resident, a journalist, or a planner can actually use.
 
 ## What comes first
 
