@@ -15,7 +15,8 @@ const statusLabel = {
 };
 
 const Tag = url ? 'a' : 'div';
-const tagProps = url ? { href: url, target: '_blank', rel: 'noopener' } : {};
+const localizedUrl = url ? `${url}${url.includes('?') ? '&' : '?'}lang=${lang}` : url;
+const tagProps = url ? { href: localizedUrl } : {};
 ---
 <Tag class="card" {...tagProps}>
   <span class={`pill ${status}`}>{statusLabel[status]}</span>
