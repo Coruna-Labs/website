@@ -9,7 +9,7 @@ draft: false
 
 Coruña Labs is a small, independent lab that builds open maps and tools on public data. It takes the information a city already produces (bus positions, census figures, school boundaries, planning records) and turns it into things anyone in A Coruña can use, in the browser, for free.
 
-The model is borrowed and inspired from civic-technology offices within the City of New York and BetaNYC: build well-made, open-source tools on public data, document how they work, and give them away. Every project here names its data sources and explains its method.
+The model is borrowed and inspired from civic-technology offices within the City of New York and BetaNYC. We build well-made, open-source tools on public data, document how they work, and give them away. Every project here names its data sources and explains its method.
 
 ## How it works
 
