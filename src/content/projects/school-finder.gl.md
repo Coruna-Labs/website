@@ -1,12 +1,11 @@
 ---
-title: "Buscador de Zonas Escolares"
-description: "Escribe o teu enderezo e descobre en que zonas escolares e distritos estás. Unha pequena ferramenta para unha pregunta que se fai toda familia."
-status: "idea"
-source: "Concello da Coruña · Xunta de Galicia"
+title: "Zonas Escolares"
+description: "Escribe un enderezo e descobre exactamente en que zona escolar estás, en calquera punto de Galicia."
+status: "live"
+url: "https://escolares.corunalabs.org"
+source: "Xunta de Galicia"
 order: 3
 lang: "gl"
 ---
 
-Introduce un enderezo e atopa as zonas de escolarización e os distritos administrativos que lle corresponden. Unha ferramenta pequena e práctica construída sobre datos públicos de límites do Concello e da Xunta.
-
-Planeada.
+Escribe un enderezo ou preme nun centro para ver exactamente que área de influencia lle corresponde, nos 11 concellos onde a Xunta publica estes datos. Cada resultado abre a ficha completa do centro: enderezo, teléfono, web e unha ligazón á súa páxina oficial.

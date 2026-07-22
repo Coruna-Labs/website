@@ -1,12 +1,11 @@
 ---
-title: "School Zone Finder"
-description: "Type your address, see which school zones and districts you fall in. A small tool for a question every family asks."
-status: "idea"
-source: "Concello da Coruña · Xunta de Galicia"
+title: "Zonas Escolares"
+description: "Enter an address, see exactly which school catchment zone it falls in, anywhere across Galicia."
+status: "live"
+url: "https://escolares.corunalabs.org"
+source: "Xunta de Galicia"
 order: 3
 lang: "en"
 ---
 
-Enter an address and find the school catchment zones and administrative districts that apply to it. A small, practical tool built on public boundary data from the Concello and the Xunta.
-
-Planned.
+Enter an address or click a school to see exactly which catchment zone applies, across the 11 concellos where the Xunta publishes this data. Each result opens straight into the school's full record: address, phone, website, and a link to its official page.
